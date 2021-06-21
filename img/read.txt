@@ -1,0 +1,8 @@
+here you should have two images:
+B04_RED.JPEG 2000 image
+B08_NIR.JPG 2000 image
+
+And here the output image will be saved.. big size :C
+then you should process this in QGIS
+
+ This process is valid for landast images only change the name of the picture with the bands names

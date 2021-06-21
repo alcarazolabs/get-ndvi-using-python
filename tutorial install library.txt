@@ -1,0 +1,31 @@
+https://youtu.be/6r44X-3upRQ :
+
+Las imágenes satelitales son georasters, es decir, son un arreglo regular de columnas y filas (matriz) con una georeferenciacion. Python es un lenguaje de programación y análisis muy versátil para el análisis de matrices con la librería Numpy, sin embargo hasta ahora no era muy eficiente para el procesamiento de georasters hasta la llegada del paquete Rasterio. 
+
+Rasterio es una librería de Python que permite la lectura, inspección, visualización y la escritura de raster geospaciales. La librería usa rasters en formato GeoTIFF y otros formatos y es capaz de trabajar con imágenes satelitales, modelos de elevación digital, productos de imágenes, e imágenes procesadas de drone. Rasterio permite importar un raster geoespacial de una banda y multibanda y permite trabajar en un entorno interactivo como un Jupyter notebook. La librería conserva la “dualidad” del georaster, eso significa que puede manejar los parámetros de localización y resolución del raster tanto como los valores matriciales de los elementos grillados.
+
+Al parecer esta ultima versión de rasterio solo funciona con Python 3.9.0
+Para poder instalarla me cree un enviroment. 
+1. Crear el enviroment con python 3.9 y librerias básicas:
+# conda create -n MySatelite anaconda python=3.9.0
+# conda activate MySatelite
+# conda install ipykernel
+# python -m ipykernel install --user --name MySatelite --display-name "Env MySatelite"
+# pip install jupyter
+# pip install numpy scipy Pillow cython matplotlib scikit-image opencv-python imgaug IPython[all]
+
+2. Instalar Rasterio.
+Descargar los archivos:
+# GDAL-3.2.2-cp39-cp39-win_amd64.whl
+# rasterio-1.2.1-cp39-cp39-win_amd64.whl
+De la página: https://www.lfd.uci.edu/~gohlke/pythonlibs/#gdal
+Ahi encontraran las librerías, GDAL es un requisito para rasterio. Ctrl + F para buscar. 
+Luego ejecutar en anaconda con el enviroment MySatelite activado:
+$ pip install -U pip
+$ pip install GDAL-3.2.2-cp39-cp39-win_amd64.whl
+$ pip install rasterio-1.2.1-cp39-cp39-win_amd64.whl
+Obviamente tienen que tener descargado esos archivos.
+
+Y listo amigos con eso tendremos todo lo suficiente. También en la misma página puede descargarse geopandas etc..
+
+https://rasterio.readthedocs.io/en/latest/installation.html
