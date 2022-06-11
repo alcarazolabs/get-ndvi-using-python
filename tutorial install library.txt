@@ -29,3 +29,15 @@ Obviamente tienen que tener descargado esos archivos.
 Y listo amigos con eso tendremos todo lo suficiente. También en la misma página puede descargarse geopandas etc..
 
 https://rasterio.readthedocs.io/en/latest/installation.html
+
+
+# Si vamos a instalar geopandas instalar las siguientes dependencias:
+
+pipwin install shapely
+pipwin install fiona
+pipwin install pyproj
+pipwin install six
+pyqt5==5.12.3
+pyqtwebengine==5.12.1
+pipwin install rtree
+pipwin install geopandas
