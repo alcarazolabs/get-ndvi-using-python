@@ -22,8 +22,8 @@ De la página: https://www.lfd.uci.edu/~gohlke/pythonlibs/#gdal
 Ahi encontraran las librerías, GDAL es un requisito para rasterio. Ctrl + F para buscar. 
 Luego ejecutar en anaconda con el enviroment MySatelite activado:
 $ pip install -U pip
-$ pip install GDAL-3.2.2-cp39-cp39-win_amd64.whl
-$ pip install rasterio-1.2.1-cp39-cp39-win_amd64.whl
+$ pip install GDAL‑3.4.3‑cp39‑cp39‑win_amd64.whl
+$ pip install rasterio‑1.2.10‑cp39‑cp39‑win_amd64.whl
 Obviamente tienen que tener descargado esos archivos.
 
 Y listo amigos con eso tendremos todo lo suficiente. También en la misma página puede descargarse geopandas etc..
